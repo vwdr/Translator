@@ -1,22 +1,23 @@
-# Translator: A Web-Based Translation Tool
+# Translator: A Chrome Extension for Text Translation
 
 ## Overview
 
-**Translator** is a web-based application that allows users to translate text between different languages using a translation API. The tool offers a simple interface for inputting text, selecting target languages, and viewing translations.
+**Translator** is a Chrome extension that allows users to type text and get translations directly in their browser. With a straightforward interface, this extension makes it easy to translate text between various languages while browsing the web.
 
-![screenshot](screenshot.jpg)
+![Project Screenshot](screenshot.jpg)
 
 ## Technologies Used
 
-- **JavaScript**: For handling user interactions and managing API requests.
-- **Translation API**: Used to perform the actual text translations.
-- **HTML/CSS**: For structuring and styling the user interface.
+- **JavaScript**: For handling user interactions, managing translation requests, and updating the extension interface.
+- **Chrome Extensions API**: For integrating the translation functionality within the Chrome browser.
+- **Translation API**: Utilized to perform the actual text translations.
+- **HTML/CSS**: For structuring and styling the extension's popup interface.
 
 ## Features
 
-- **Text Translation**: Translate text between multiple languages.
+- **Text Translation**: Type text into the extension popup to translate it into the selected language.
 - **Language Selection**: Choose from a list of supported languages for translation.
-- **User-Friendly Interface**: Simple and intuitive design for easy use.
+- **Browser Integration**: Access translation functionality directly from the Chrome toolbar.
 
 ## Installation
 
@@ -24,38 +25,42 @@
     ```bash
     git clone https://github.com/vwdr/Translator.git
     ```
-2. Open `index.html` in your preferred web browser to start using the translator tool.
+2. Navigate to `chrome://extensions/` in your Chrome browser.
+3. Enable "Developer mode" by toggling the switch in the top right corner.
+4. Click "Load unpacked" and select the directory where you cloned the repository.
+5. The extension will be added to your Chrome browser.
 
 ## Usage
 
-1. Load `index.html` in your browser to access the translation interface.
+1. Click on the Translator extension icon in the Chrome toolbar to open the popup.
 2. Enter the text you want to translate into the input field.
 3. Select the target language from the dropdown menu.
-4. Click the "Translate" button to receive the translated text.
+4. Click the "Translate" button to receive the translated text within the extension popup.
 
 ## What I Learned
 
-- **API Integration**: Implemented a translation API to handle text translations.
-- **JavaScript Functionality**: Developed functionality for managing user inputs and displaying translations.
-- **HTML/CSS Design**: Created a user-friendly interface for inputting text and selecting languages.
+- **Chrome Extensions API**: Integrated the extension into Chrome and managed interactions with the browser environment.
+- **API Integration**: Utilized a translation API to handle text translation requests and display results.
+- **JavaScript Functionality**: Developed the core functionality for text input, language selection, and displaying translations.
+- **User Interface Design**: Created a clean and functional popup interface using HTML and CSS.
 
 ## Development
 
-1. **HTML Structure**: Built the basic HTML layout for the translation tool.
-2. **CSS Styling**: Designed the interface with CSS for a clean and user-friendly appearance.
-3. **JavaScript Implementation**: Integrated the translation API and managed interactions between user input and API responses.
+1. **Chrome Extension Structure**: Set up the extension manifest and background scripts to integrate with Chrome.
+2. **HTML/CSS Popup**: Designed the popup interface for user interactions, including text input and language selection.
+3. **JavaScript Implementation**: Managed API requests, handled user inputs, and updated the popup with translation results.
 
 ### Challenges
 
-- **API Request Handling**: Managed API requests and responses, including handling errors and ensuring smooth user experience.
-- **User Interface**: Designed an intuitive and responsive interface for various devices and screen sizes.
-- **Language Support**: Implemented functionality to support multiple languages and handle language-specific nuances.
+- **API Key Management**: Secured API keys and ensured they are properly handled within the extension.
+- **Browser Integration**: Addressed issues related to extension permissions and interactions with the Chrome browser.
+- **User Interface**: Ensured that the extension interface is responsive and user-friendly across different devices.
 
 ## Future Improvements
 
-- **Additional Languages**: Expand support to include more languages and dialects.
-- **Advanced Features**: Add features like text-to-speech or support for translating multiple texts simultaneously.
-- **User Preferences**: Implement settings for saving user preferences and translation history.
+- **Additional Features**: Add functionality for translating text from selected portions of web pages.
+- **Language Expansion**: Support more languages and dialects for translation.
+- **User Preferences**: Implement settings for saving user preferences and frequently used languages.
 
 ## Contributing
 
